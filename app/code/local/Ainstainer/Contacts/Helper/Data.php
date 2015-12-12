@@ -6,7 +6,7 @@
  * Time: 12:15
  */
 
-class Zita_Contacts_Helper_Data extends Mage_Contacts_Helper_Data
+class Ainstainer_Contacts_Helper_Data extends Mage_Contacts_Helper_Data
 {
     public function getUserName()
     {
