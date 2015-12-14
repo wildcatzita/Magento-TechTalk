@@ -5,12 +5,30 @@
             <version>1.0</version>
         </Ainstainer_Contacts>
     </modules>
-
     <global>
         <helpers>
             <contacts>
-                    <class>Ainstainer_Contacts_Helper</class>
+                <class>Ainstainer_Contacts_Helper</class>
             </contacts>
         </helpers>
     </global>
+    <frontend>
+        <routers>
+            <contactus>
+                <use>standard</use>
+                <args>
+                    <module>Ainstainer_Contacts</module>
+                    <frontName>contactus</frontName>
+                </args>
+            </contactus>
+        </routers>
+        <layout>
+            <updates>
+                <contactus>
+                    <file>ainstainer/contactus.xml</file>
+                </contactus>
+            </updates>
+        </layout>
+    </frontend>
 </config>
+
