@@ -23,8 +23,8 @@
         <reference name="content">
             <block type="homepage/homepage" name="slider_homepage" template="ainstainer/slider.phtml"/>
             <block type="homepage/homepage" name="banners_homepage" template="ainstainer/banners.phtml"/>
-            <!--<block type="homepage/homepage" name="homepage_popular_products"
-                   template="ainstainer/popular_products.phtml"/>-->
+            <block type="homepage/homepage" name="homepage_popular_products"
+                   template="ainstainer/popular_products.phtml"/>
         </reference>
 
     </cms_index_index>

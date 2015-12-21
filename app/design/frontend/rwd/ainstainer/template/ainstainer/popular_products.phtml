@@ -1,0 +1,18 @@
+<div>
+    <br/>
+    <h3 class="text-center">Best Viewed Products</h3>
+    <table border="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <?php foreach ($this->getMostViewedProducts() as $product){ ?>
+                <td>
+                    <a href="<?php echo $product->getProductUrl() ?>"><img class="product-img" src="<?php echo $this->helper('catalog/image')->init($product, 'small_image')->resize(99); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($product, 'small_image'), null, true) ?>" width="95" border="0" /></a>
+                    <div class="product-description">
+                        <p><a href="<?php echo $product->getProductUrl() ?>"><?php echo $this->stripTags($product->getName(), null, true); ?></a></p>
+                    </div>
+                </td>
+                <?php } ?>
+            </tr>
+        </tbody>
+    </table>
+</div>

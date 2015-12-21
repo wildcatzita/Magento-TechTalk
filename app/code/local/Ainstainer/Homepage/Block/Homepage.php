@@ -9,4 +9,36 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template {
     public function getImg($index) {
         return $this->imgsrc[$index];
     }
+
+
+    public function getMostViewedProducts()
+    {
+        /**
+         * Number of products to display
+         * You may change it to your desired value
+         */
+        $productCount = 6;
+
+        /**
+         * Get Store ID
+         */
+        $storeId = Mage::app()->getStore()->getId();
+
+        /**
+         * Get most viewed product collection
+         */
+        $products = Mage::getResourceModel('reports/product_collection')
+            ->addAttributeToSelect('*')
+            ->setStoreId($storeId)
+            ->addStoreFilter($storeId)
+            ->addViewsCount() // addViewsCount() filters the products with their views count
+            ->setPageSize($productCount);
+
+        Mage::getSingleton('catalog/product_status')
+            ->addVisibleFilterToCollection($products);
+        Mage::getSingleton('catalog/product_visibility')
+            ->addVisibleInCatalogFilterToCollection($products);
+
+        return $products;
+    }
 }
