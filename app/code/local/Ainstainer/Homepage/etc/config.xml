@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ainstainer_Homepage>
+            <version>1.0</version>
+        </Ainstainer_Homepage>
+    </modules>
+    <global>
+        <blocks>
+            <homepage>
+                <class>Ainstainer_Homepage_Block</class>
+            </homepage>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <homepage>
+                    <file>ainstainer/homepage.xml</file>
+                </homepage>
+            </updates>
+        </layout>
+    </frontend>
+</config>
+
