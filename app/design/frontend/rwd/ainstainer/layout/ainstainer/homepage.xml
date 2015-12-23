@@ -4,26 +4,21 @@
 
         <reference name="head">
             <action method="addCss">
+                <stylesheet>css/bootstrap-theme.min.css</stylesheet>
+            </action>
+            <action method="addCss">
                 <stylesheet>css/bootstrap.min.css</stylesheet>
             </action>
             <action method="addItem">
                 <type>skin_js</type>
                 <name>js/bootstrap.min.js</name>
             </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/jssor.slider.mini.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_js</type>
-                <name>js/jquery-1.9.1.min.js</name>
-            </action>
         </reference>
 
         <reference name="content">
+
             <block type="homepage/homepage" name="slider_homepage" template="ainstainer/slider.phtml"/>
-            <block type="homepage/homepage" name="banners_homepage" template="ainstainer/banners.phtml"/>
-            <block type="homepage/homepage" name="homepage_popular_products"
+            <block type="homepage/homepage" after="banners_homepage" name="homepage_popular_products"
                    template="ainstainer/popular_products.phtml"/>
         </reference>
 
