@@ -23,7 +23,6 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template {
          * Get Store ID
          */
         $storeId = Mage::app()->getStore()->getId();
-
         /**
          * Get most viewed product collection
          */
