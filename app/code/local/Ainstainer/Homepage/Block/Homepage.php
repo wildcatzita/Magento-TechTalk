@@ -40,4 +40,13 @@ class Ainstainer_Homepage_Block_Homepage extends Mage_Core_Block_Template {
 
         return $products;
     }
+
+    public function getSliderCollection()
+    {
+        $sliderCollection = Mage::getModel('ainstainer_homepage/banner')->getCollection()
+            ->addFilter('status',1)
+            ->setOrder('position','ASC');
+        return $sliderCollection;
+    }
+
 }
