@@ -17,7 +17,7 @@
 
         <reference name="content">
 
-            <block type="homepage/homepage" name="slider_homepage" template="ainstainer/slider.phtml"/>
+            <!--<block type="homepage/homepage" name="slider_homepage" template="ainstainer/slider.phtml"/>-->
             <block type="homepage/homepage" after="banners_homepage" name="homepage_popular_products"
                    template="ainstainer/popular_products.phtml"/>
         </reference>

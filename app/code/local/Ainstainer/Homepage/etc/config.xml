@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ainstainer_Homepage>
-            <version>1.1</version>
+            <version>1.0</version>
         </Ainstainer_Homepage>
     </modules>
     <global>
@@ -12,19 +12,26 @@
             </homepage>
         </blocks>
         <models>
-            <homepage>
+            <ainstainer_homepage>
                 <class>Ainstainer_Homepage_Model</class>
                 <resourceModel>ainstainer_homepage_resource</resourceModel>
-            </homepage>
+            </ainstainer_homepage>
             <ainstainer_homepage_resource>
                 <class>Ainstainer_Homepage_Model_Resource</class>
                 <entities>
-                    <homepage>
-                        <table>homepage_banner</table>
-                    </homepage>
+                    <banner>
+                        <table>ainstainer_banner</table>
+                    </banner>
                 </entities>
             </ainstainer_homepage_resource>
         </models>
+        <resources>
+            <ainstainer_homepage_setup>
+                <setup>
+                    <module>Ainstainer_Homepage</module>
+                </setup>
+            </ainstainer_homepage_setup>
+        </resources>
     </global>
     <frontend>
         <layout>
