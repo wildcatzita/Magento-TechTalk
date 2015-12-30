@@ -11,6 +11,37 @@
                 <class>Ainstainer_Contacts_Helper</class>
             </contacts>
         </helpers>
+        <helpers>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Helper</class>
+            </ainstainer_contacts>
+        </helpers>
+        <blocks>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Block</class>
+            </ainstainer_contacts>
+        </blocks>
+        <models>
+            <ainstainer_contacts>
+                <class>Ainstainer_Contacts_Model</class>
+                <resourceModel>ainstainer_contacts_resource</resourceModel>
+            </ainstainer_contacts>
+            <ainstainer_contacts_resource>
+                <class>Ainstainer_Contacts_Model_Resource</class>
+                <entities>
+                    <contactus>
+                        <table>ainstainer_contactus</table>
+                    </contactus>
+                </entities>
+            </ainstainer_contacts_resource>
+        </models>
+        <resources>
+            <ainstainer_contacts_setup>
+                <setup>
+                    <module>Ainstainer_Contacts</module>
+                </setup>
+            </ainstainer_contacts_setup>
+        </resources>
     </global>
     <frontend>
         <routers>
@@ -30,5 +61,16 @@
             </updates>
         </layout>
     </frontend>
+    <admin>
+        <routes>
+            <contactus_admin>
+                <use>admin</use>
+                <args>
+                    <module>Ainstainer_Contacts</module>
+                    <frontName>contactus_admin</frontName>
+                </args>
+            </contactus_admin>
+        </routes>
+    </admin>
 </config>
 

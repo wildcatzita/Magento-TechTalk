@@ -19,4 +19,4 @@ Mage::app('admin')->setUseSessionInUrl(false);
 
 umask(0);
 
-var_dump(Mage::getModel('ainstainer_homepage/banner')->getCollection());
+var_dump(Mage::getModel('ainstainer_contacts/contactus'));

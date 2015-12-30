@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <ainstainer_contacts translate="title" module="ainstainer_contacts">
+                    <sort_order>10</sort_order>
+                    <title>Contacts Us Reports</title>
+                    <action>contactus_admin/adminhtml_contactus</action>
+                </ainstainer_contacts>
+            </children>
+        </cms>
+    </menu>
+</config>
