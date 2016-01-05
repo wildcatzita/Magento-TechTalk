@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ainstainer_Shipping>
+            <version>1.0</version>
+        </Ainstainer_Shipping>
+    </modules>
+    <global>
+        <models>
+            <ainstainer_shipping>
+                <class>Ainstainer_Shipping_Model</class>
+            </ainstainer_shipping>
+        </models>
+        <helpers>
+            <ainstainer_shipping>
+                <class>Ainstainer_Shipping_Helper</class>
+            </ainstainer_shipping>
+        </helpers>
+    </global>
+    <default>
+        <carriers>
+            <ainstainer_shipping>
+                <active>1</active>
+                <model>ainstainer_shipping/carrier/</model>
+                <title>Ainstainer Shipping</title>
+                <name>Ainstainer Shipping Method</name>
+                <sallowspecific>1</sallowspecific>
+                <price>5.00</price>
+            </ainstainer_shipping>
+        </carriers>
+    </default>
+</config>
