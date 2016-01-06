@@ -1,5 +1,5 @@
 <?php
-die("Create contactus");
+
 $installer = $this;
 $installer->startSetup();
 

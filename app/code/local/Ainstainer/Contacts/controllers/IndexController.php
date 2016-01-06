@@ -14,8 +14,11 @@ class Ainstainer_Contacts_IndexController extends Mage_Core_Controller_Front_Act
     public function createAction()
     {
         $data = $this->getRequest()->getPost();
-        $model = Mage::getModel('ainstainer_contacts/contactus');
+        $model = Mage::getModel('ainstainer_contacts/contactusmessages');
         $model->setData($data);
+        $model->setCreated(now());
         $model->save();
+        $this->_redirect('*/*/');
     }
+
 }

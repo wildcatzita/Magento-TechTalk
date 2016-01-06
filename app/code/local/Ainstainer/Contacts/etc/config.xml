@@ -10,8 +10,6 @@
             <contacts>
                 <class>Ainstainer_Contacts_Helper</class>
             </contacts>
-        </helpers>
-        <helpers>
             <ainstainer_contacts>
                 <class>Ainstainer_Contacts_Helper</class>
             </ainstainer_contacts>
@@ -29,9 +27,9 @@
             <ainstainer_contacts_resource>
                 <class>Ainstainer_Contacts_Model_Resource</class>
                 <entities>
-                    <contactus>
+                    <contactusmessages>
                         <table>ainstainer_contactus</table>
-                    </contactus>
+                    </contactusmessages>
                 </entities>
             </ainstainer_contacts_resource>
         </models>
@@ -63,13 +61,13 @@
     </frontend>
     <admin>
         <routes>
-            <contactus_admin>
+            <contactusmessagesadmin>
                 <use>admin</use>
                 <args>
-                    <module>Ainstainer_Contacts</module>
-                    <frontName>contactus_admin</frontName>
+                    <module>Ainstainer_Contacts_Adminhtml</module>
+                    <frontName>contactusmessagesadmin</frontName>
                 </args>
-            </contactus_admin>
+            </contactusmessagesadmin>
         </routes>
     </admin>
 </config>

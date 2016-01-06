@@ -3,10 +3,10 @@
     <menu>
         <cms>
             <children>
-                <ainstainer_contacts translate="title" module="ainstainer_contacts">
+                <ainstainer_contacts module="ainstainer_contacts">
                     <sort_order>10</sort_order>
                     <title>Contacts Us Reports</title>
-                    <action>contactus_admin/adminhtml_contactus</action>
+                    <action>contactusmessagesadmin/contactusmessages/index</action>
                 </ainstainer_contacts>
             </children>
         </cms>

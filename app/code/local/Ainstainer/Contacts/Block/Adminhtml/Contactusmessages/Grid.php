@@ -1,8 +1,8 @@
 <?php
-class Ainstainer_Contacts_Block_Adminhtml_Contacts_Grid extends Mage_Adminhtml_Block_Widget_Grid {
+class Ainstainer_Contacts_Block_Adminhtml_Contactusmessages_Grid extends Mage_Adminhtml_Block_Widget_Grid {
 
     protected function _prepareCollection() {
-        $collection = Mage::getResourceModel('ainstainer_contacts/contacts_collection');
+        $collection = Mage::getResourceModel('ainstainer_contacts/contactusmessages_collection');
         $this->setCollection($collection);
         return parent::_prepareCollection();
     }
