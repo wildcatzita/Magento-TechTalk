@@ -49,4 +49,9 @@ class Ainstainer_Contacts_Block_Adminhtml_Contactusmessages_Grid extends Mage_Ad
         return parent::_prepareColumns();
     }
 
+    public function getRowUrl($model)
+    {
+        return $this->getUrl('*/*/edit', array('id' => $model->getContact_id()));
+    }
+
 }

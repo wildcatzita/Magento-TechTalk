@@ -6,7 +6,7 @@
                 <ainstainer_contacts module="ainstainer_contacts">
                     <sort_order>10</sort_order>
                     <title>Contacts Us Reports</title>
-                    <action>contactusmessagesadmin/contactusmessages/index</action>
+                    <action>adminhtml/contactusmessages/</action>
                 </ainstainer_contacts>
             </children>
         </cms>

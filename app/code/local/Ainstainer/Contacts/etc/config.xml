@@ -60,15 +60,15 @@
         </layout>
     </frontend>
     <admin>
-        <routes>
-            <contactusmessagesadmin>
-                <use>admin</use>
+        <routers>
+            <adminhtml>
                 <args>
-                    <module>Ainstainer_Contacts_Adminhtml</module>
-                    <frontName>contactusmessagesadmin</frontName>
+                    <modules>
+                        <ainstainer_contacts before="Mage_Adminhtml">Ainstainer_Contacts_Adminhtml</ainstainer_contacts>
+                    </modules>
                 </args>
-            </contactusmessagesadmin>
-        </routes>
+            </adminhtml>
+        </routers>
     </admin>
 </config>
 
